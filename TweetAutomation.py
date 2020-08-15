@@ -30,21 +30,21 @@ if available==1:
     email = WebDriverWait(driver, 10).until(ec.element_to_be_clickable((By.NAME,
                                                                         'session[username_or_email]')))
     email.click()
-    email.send_keys('arjunraj1807@gmail.com')
+    email.send_keys('<Enter your email ID>')
     password = WebDriverWait(driver, 10).until(ec.element_to_be_clickable((By.NAME,
                                                                            'session[password]')))
     password.click()
-    password.send_keys('hellohowru12345')
+    password.send_keys('<Enter your password>')
     password.send_keys(Keys.ENTER)
 else:
     email = WebDriverWait(driver, 10).until(ec.element_to_be_clickable((By.XPATH,
                                                                         '/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/section/form/div/div[1]/div/label/div/div[2]/div/input')))
     email.click()
-    email.send_keys('arjunraj1807@gmail.com')
+    email.send_keys('<Enter your email ID>')
     password = WebDriverWait(driver, 10).until(ec.element_to_be_clickable((By.XPATH,
                                                                            '/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/section/form/div/div[2]/div/label/div/div[2]/div/input')))
     password.click()
-    password.send_keys('hellohowru12345')
+    password.send_keys('<Enter your password>')
     password.send_keys(Keys.ENTER)
 
 block = WebDriverWait(driver, 10).until(ec.element_to_be_clickable((By.XPATH,
